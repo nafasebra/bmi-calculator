@@ -1,3 +1,10 @@
+
+input:focus,
+button:focus{
+    outline: none;
+}
+
+
 .app-name{
     text-align: center;
     color: #ffffff;
