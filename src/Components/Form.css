@@ -10,21 +10,24 @@
 }
 input{
     position: relative;
-    width: calc(60vh - 100px);
-    padding: 1.2em 0.5em;
+    width: calc(40vw - 100px);
+    padding: 1.2em 0.75em;
     background-color: transparent;
-    border: 0;
-    border-bottom: 2.5px solid #ffffff;
-    margin: 4em 0 0;
-    color: #ffffff;
+    border: 1px solid #aaaaaa;
+    margin: 2em 0 0;
+    color: #707070;
+    border-radius: 5px;
     font-size: 1.1em;
 }
 label{
     position: absolute;
-    bottom: 18px;
-    color: #ffffff;
+    bottom: 20px;
+    left: 0.5em;
+    color: #707070;
     font-size: 1.2em;
     display: block;
+    background-color: #ffffff;
+    padding: 0 0.75em;
     transition: bottom 300ms,
                 font-size 300ms;
 }
@@ -36,7 +39,20 @@ label{
 button{
     width: 100%;
     margin-top: 2em;
-    padding: 1em;
+    padding: 1.5em;
     border: none;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #2ecc71;
+    transition: background 300ms ease-out;
+}
+button:hover{
+    background-color: #37e780fb;
+    cursor: pointer;
+}
+button svg{
+    margin-left: 1em;
 }

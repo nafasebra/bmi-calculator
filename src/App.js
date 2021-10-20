@@ -14,7 +14,7 @@ function App () {
             <h2 className="app-name">BMI Calculator</h2>
 
             <Form />
-            <Popup />
+            {/* <Popup /> */}
         </div>
     )
 }

@@ -6,6 +6,17 @@ Input your Weight and Height and get your BMI.
 <!-- IMAGE URL -->
 
 
+for use:
+- install NPM (nodejs package manager) if npm not installed on your system. 
+- clone this repo <br />
+```
+git clone https://github.com/nafasebra/bmi-calculator
+```
+- run `npm install`
+
+
+-----
+
 In the project directory, you can run:
 
 ### `yarn start`
