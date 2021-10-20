@@ -1,0 +1,26 @@
+.popup-container{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    background-color: #ffffff;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    width: 350px;
+}
+
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup-body{
+    padding-top: 1em;
+}

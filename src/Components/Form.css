@@ -22,7 +22,6 @@ input{
 label{
     position: absolute;
     bottom: 18px;
-    z-index: 1000;
     color: #ffffff;
     font-size: 1.2em;
     display: block;
@@ -36,7 +35,8 @@ label{
 
 button{
     width: 100%;
-    margin-top: 1.5em;
+    margin-top: 2em;
     padding: 1em;
-    border: 0;
+    border: none;
+    border-radius: 5px;
 }
