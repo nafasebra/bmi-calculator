@@ -4,8 +4,16 @@ button:focus{
     outline: none;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
 
 .app-name{
     text-align: center;
     font-size: 1.75rem;
 }
+
