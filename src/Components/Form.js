@@ -17,7 +17,7 @@ function Form() {
     return (
         <div className="form-container">
             <div>
-                <p>Input uarnyour Weight and Height and get your BMI.</p>
+                <p>Input your Weight and Height and get your BMI.</p>
                 <div className="form-control">
                     <input type="text" required id="height"/>
                     <label htmlFor="height">your Height (cm)</label>

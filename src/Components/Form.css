@@ -39,7 +39,7 @@ label{
 .btn{
     width: 100%;
     margin-top: 2em;
-    padding: 1.5em;
+    padding: 1.2em;
     border: none;
     border-radius: 5px;
     display: flex;
@@ -48,6 +48,7 @@ label{
     color: #ffffff;
     background-color: #2ecc71;
     transition: background 300ms ease-out;
+    font-size: 1.05em;
 }
 .btn:hover{
     background-color: #37e780fb;
