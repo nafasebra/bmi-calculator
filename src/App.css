@@ -13,7 +13,9 @@ button:hover{
 }
 
 .app-name{
-    text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 1em ;
+    font-weight: 400;
 }
 

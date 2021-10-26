@@ -10,7 +10,7 @@
 }
 input{
     position: relative;
-    width: calc(40vw - 100px);
+    width: 100%;
     padding: 1.2em 0.75em;
     background-color: transparent;
     border: 1px solid #aaaaaa;
@@ -53,4 +53,11 @@ label{
 .btn:hover{
     background-color: #37e780fb;
     cursor: pointer;
+}
+
+/* --------- use media queries ----------- */
+@media (max-width: 556px) {
+    .form-container{
+        padding: 2em 1em;
+    }
 }
