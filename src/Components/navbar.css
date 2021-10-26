@@ -1,0 +1,56 @@
+.navbar{
+    margin: 1.5em;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    box-shadow: 0 0 10px #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-name{
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0 ;
+    font-weight: 400;
+}
+
+.theme-switcher{
+    position: relative;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-switcher svg{
+    position: relative;
+    width: 20px;
+}
+
+.theme-switcher span{
+    position: absolute;
+    display: block;
+    background-color: #f3f3f3;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 300ms;
+}
+.theme-switcher:hover{
+    cursor: pointer;
+}
+.theme-switcher:hover span{
+    transform: scale(1);
+}
+
+@media (max-width: 556px) {
+    .navbar{
+        padding: 1em 1.2em;
+        margin: 0.85em;
+    }
+    .theme-switcher span{
+        display: none;
+    }
+}
