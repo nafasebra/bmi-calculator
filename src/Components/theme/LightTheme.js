@@ -2,17 +2,17 @@ import styled from 'styled-component';
 
 function LightTheme(){
     let lightBox = styled.div `
-        background-color: #2c3e50;
-        color: #aaaaaa;
+        background-color: #ffffff;
+        color: #707070;
     `
 
     let lightInput = styled.input `
-        color: #aaaaaa;
+        color: #707070;
     `
 
     let lightLabel = styled.label `
-        background-color: #2c3e50;
-        color: #aaaaaa;
+        background-color: #ffffff;
+        color: #707070;
     `
 
     return {
