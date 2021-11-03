@@ -9,8 +9,8 @@ function Navbar({ theme, changeTheme }) {
             <div className="app-name">
                 BMI Calculator
             </div>
-            <div className="theme-switcher"
-                onClick={() => changeTheme()}>
+            <div className="theme-switcher" onClick={() => changeTheme()}>
+
                 <span> </span>
                 
                 {
