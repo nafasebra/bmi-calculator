@@ -7,6 +7,10 @@ import Navbar from './Components/Navbar';
 // import styles of app
 import './App.css';
 
+// import styled components
+import LightTheme from './Components/theme/LightTheme'
+import DarkTheme from './Components/theme/DarkTheme'
+
 
 function App () {
 
@@ -17,6 +21,9 @@ function App () {
     const toggleTheme = () => {
         setTheme(!theme);
     }
+
+    console.log(LightTheme);
+    console.log(DarkTheme);
 
     return (
         <div className="app">
