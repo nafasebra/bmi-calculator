@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { LightTheme, DarkTheme, GlobalStyles } from './Components/theme/Global';
 
 // import components
 import Form from './Components/Form';
@@ -7,9 +9,6 @@ import Navbar from './Components/Navbar';
 // import styles of app
 import './App.css';
 
-// import styled components
-import LightTheme from './Components/theme/LightTheme'
-import DarkTheme from './Components/theme/DarkTheme'
 
 
 function App () {
@@ -22,15 +21,15 @@ function App () {
         setTheme(!theme);
     }
 
-    console.log(LightTheme);
-    console.log(DarkTheme);
-
     return (
-        <div className="app">
-            <Navbar changeTheme={toggleTheme} theme={theme}/>
+        <ThemeProvider theme={theme ? DarkTheme : LightTheme}>
+            <GlobalStyles />
+            <div className="app">
+                <Navbar changeTheme={toggleTheme} theme={theme}/>
 
-            <Form />
-        </div>
+                <Form />
+            </div>
+        </ThemeProvider>
     )
 }
 
