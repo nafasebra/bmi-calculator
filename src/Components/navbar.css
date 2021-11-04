@@ -2,7 +2,6 @@
     margin: 1.5em;
     border-radius: 5px;
     padding: 1em 1.5em;
-    box-shadow: 0 0 10px #f0f0f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +30,7 @@
 .theme-switcher span{
     position: absolute;
     display: block;
-    background-color: #f3f3f3;
+    background-color: #dfdfdf55;
     width: 45px;
     height: 45px;
     border-radius: 50%;

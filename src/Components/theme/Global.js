@@ -1,21 +1,24 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    body{
-        background-color: ${({ theme }) => theme.backgroundBody};
+    body, label, .popup{
+        background-color: ${({ theme }) => theme.background};
+        color: ${({ theme }) => theme.color};
+    }
+
+    .navbar{
+        box-shadow: ${({ theme }) => theme.navbarShadow};
     }
 `
 
 export const LightTheme = {
-    backgroundBody: '#ffffff',
-    colorBody: '#707070',
-    backgroundLabel: '#ffffff',
-    colorLabel: '#707070'
+    background: '#ffffff',
+    color: '#707070',
+    navbarShadow: ' 0 0 10px #f0f0f0'
 }
 
 export const DarkTheme = {
-    backgroundBody: '#2c3e50',
-    colorBody: '#ffffff',
-    backgroundLabel: '#2c3e50',
-    colorLabel: '#ffffff'
+    background: '#2c3e50',
+    color: '#ffffff',
+    navbarShadow: ' 0 0 10px #21212177'
 }
