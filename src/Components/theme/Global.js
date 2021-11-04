@@ -12,13 +12,13 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 export const LightTheme = {
-    background: '#ffffff',
+    background: '#f3f3f3',
     color: '#707070',
-    navbarShadow: ' 0 0 10px #f0f0f0'
+    navbarShadow: ' 0 0 10px #dfdfdfaa'
 }
 
 export const DarkTheme = {
-    background: '#2c3e50',
-    color: '#ffffff',
-    navbarShadow: ' 0 0 10px #21212177'
+    background: '#1e272e',
+    color: '#dfdfdf',
+    navbarShadow: ' 0 0 10px #212121dd'
 }

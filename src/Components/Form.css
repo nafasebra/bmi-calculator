@@ -8,6 +8,7 @@
 .form-control{
     position: relative;
 }
+
 input{
     position: relative;
     width: 100%;
@@ -15,7 +16,7 @@ input{
     background-color: transparent;
     border: 1px solid #aaaaaa;
     margin: 2em 0 0;
-    color: #707070;
+    color: #aaaaaa;
     border-radius: 5px;
     font-size: 1.1em;
 }
@@ -24,6 +25,7 @@ label{
     bottom: 20px;
     left: 0.5em;
     color: #707070;
+    user-select: none;
     font-size: 1.2em;
     display: block;
     background-color: #ffffff;
