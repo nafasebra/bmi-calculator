@@ -17,22 +17,30 @@ function Form() {
     
     const changeHeight = (eve) => {
         let value = eve.target.value;
-        setHeight(value);
+        let regex = /^[0-9]*$/;
+
+        if(value.match(regex))
+            setHeight(value);
     }
 
     const changeWeight = (eve) => {
         let value = eve.target.value;
-        setWeight(value);
+        let regex = /^[0-9]*$/;
+        
+        if(value.match(regex))
+            setWeight(value);
     }
 
     const calculate = () => {
         setOpenPopup(true);
     }
 
+
     return (
         <div className="form-container">
             <div>
                 <p>Input your Weight and Height and get your BMI.</p>
+                <p className="text-bold">Please enter numeric data</p>
                 <div className="form-control">
                     <input 
                         type="text" 
