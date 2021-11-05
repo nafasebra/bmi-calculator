@@ -14,6 +14,8 @@ function Form() {
     const [ height, setHeight ] = useState('');
     const [ weight, setWeight ] = useState('');
 
+    const [ result, setResult ] = useState(0);
+
     
     const changeHeight = (eve) => {
         let value = eve.target.value;
@@ -32,7 +34,11 @@ function Form() {
     }
 
     const calculate = () => {
-        setOpenPopup(true);
+        // setOpenPopup(true);
+
+        if(height !== '' && weight !== ''){
+            setResult((weight / height / height) * 10000);
+        }
     }
 
 
@@ -65,7 +71,10 @@ function Form() {
                 </button>
             </div>
 
-            <Popup status={openPopup} setFalse={() => setOpenPopup(false)} />
+            <Popup 
+                status={openPopup} 
+                setFalse={() => setOpenPopup(false)} 
+            />
         </div>
     )
 }
