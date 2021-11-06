@@ -12,7 +12,7 @@ Input your Weight and Height and get your BMI.
 <br />
 
 Visiting the demo:
-
+https://nafasebra.github.io/bmi-calculator/
 
 
 for use:
