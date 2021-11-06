@@ -3,7 +3,16 @@
 this repo about of BMI Calculator that create with React.js
 Input your Weight and Height and get your BMI.
 
-<!-- IMAGE URL -->
+![11](https://user-images.githubusercontent.com/74317517/140605490-59e9a1aa-5bd3-4919-b258-e79fe8184fe6.PNG)
+
+<br />
+
+![22](https://user-images.githubusercontent.com/74317517/140605504-aca6c585-4f99-42c2-a989-2c287b71dcfb.PNG)
+
+<br />
+
+Visiting the demo:
+
 
 
 for use:
