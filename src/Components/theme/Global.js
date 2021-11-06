@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
     // i could merge this bellow the styles,
     // but i was found the bug and forced :))
-    
+
     body{
         background-color: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.color};
@@ -22,16 +22,22 @@ export const GlobalStyles = createGlobalStyle`
     .navbar{
         box-shadow: ${({ theme }) => theme.navbarShadow};
     }
+
+    input{
+        border: ${({ theme }) => theme.borderInput};
+    }
 `
 
 export const LightTheme = {
     background: '#f3f3f3',
     color: '#707070',
-    navbarShadow: ' 0 0 10px #dfdfdfaa'
+    navbarShadow: ' 0 0 10px #dfdfdfaa',
+    borderInput: '1px solid #aaaaaa',
 }
 
 export const DarkTheme = {
     background: '#1e272e',
     color: '#dfdfdf',
-    navbarShadow: ' 0 0 10px #212121dd'
+    navbarShadow: ' 0 0 10px #212121dd',
+    borderInput: '1px solid #aaaaaa77',
 }
