@@ -34,10 +34,11 @@ function Form() {
     }
 
     const calculate = () => {
-        // setOpenPopup(true);
-
+        let bmi = 0;
         if(height !== '' && weight !== ''){
-            setResult((weight / height / height) * 10000);
+            bmi = (weight / height / height) * 10000;
+            setResult(bmi.toFixed(1));
+            setOpenPopup(true);
         }
     }
 
@@ -74,6 +75,7 @@ function Form() {
             <Popup 
                 status={openPopup} 
                 setFalse={() => setOpenPopup(false)} 
+                bmiResult={result}
             />
         </div>
     )

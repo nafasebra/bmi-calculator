@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 // import styles of popup
 import './Popup.css';
 
-function Popup({ status, setFalse }) {
+function Popup( props ) {
+    
+    let { status, setFalse, bmiResult } = props;
+
+    const [ message, setMessage ] = useState('');
+
+    useEffect(() => {
+
+        if(bmiResult < 18.5){
+            setMessage('Under weight');
+        }
+        else if(bmiResult >= 18.5 && bmiResult <= 24.9){
+            setMessage('Normal weight');
+        }
+        else if(bmiResult >= 25 && bmiResult <= 29.9){
+            setMessage('Over weight');
+        }
+        else if(bmiResult >= 30){
+            setMessage('Very over weight');
+        }
+        
+    }, [ bmiResult ])
+
 
     return (
         <>
@@ -18,8 +40,8 @@ function Popup({ status, setFalse }) {
                             </button>
                         </div>
                         <div className="popup-body">
-                            <h1>22.5</h1>
-                            <h3>Good weight</h3>
+                            <h1>{ bmiResult }</h1>
+                            <h3>{ message }</h3>
 
                             <button className="btn" onClick={() => setFalse()}>
                                 OK! I get

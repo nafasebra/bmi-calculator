@@ -1,7 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    body, label, .popup{
+    // i could merge this bellow the styles,
+    // but i was found the bug and forced :))
+    
+    body{
+        background-color: ${({ theme }) => theme.background};
+        color: ${({ theme }) => theme.color};
+    }
+
+    label{
+        background-color: ${({ theme }) => theme.background};
+        color: ${({ theme }) => theme.color};
+    }
+
+    .popup{
         background-color: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.color};
     }
